@@ -1,8 +1,3 @@
-console.log("File accessed through JS");
-
-
-
-
 const weatherForm=document.querySelector("form");
 const search=document.querySelector("input");
 const messageOne=document.querySelector("#msg_1");
