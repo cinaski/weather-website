@@ -15,6 +15,7 @@ const partialsPath=path.join(__dirname,"../templates/partials")
 console.log(publicDirectoryPath);
 
 const app=express();
+const port=process.env.PORT || 3000;
 
 app.set("views",viewsPath);
 app.set("view engine","hbs");
@@ -103,7 +104,7 @@ app.get("*",(req,res)=>{
     })
 })
 
-app.listen(3000,()=>{
-    console.log("Server up and running")
+app.listen(port,()=>{
+    console.log("Server up and running" + port)
 })
 
